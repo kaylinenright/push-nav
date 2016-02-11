@@ -29,7 +29,7 @@ body{
 }
 
 header {
-  padding: 0 1em;
+  padding: 0 2em;
   position: relative;
 }
 
@@ -40,6 +40,14 @@ header {
     top: 0;
 }
 
+h1{
+    font-family: sans-serif;
+    text-transform: uppercase;    
+    color: $light-blue;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
 .navigation{
     ul{
         padding: 0;
@@ -47,15 +55,25 @@ header {
     li{
        list-style-type: none;
         &:first-child a{
-            border-top: 1px solid $light-grey;
+            border-top: 1px solid $dark-blue;
         }
     
     a{
         display: block;
+        font-family: sans-serif;
+        text-transform: uppercase;
         text-align: center;
         padding: .5em 1em;
-        border-bottom: 1px solid $light-grey;
+        border-bottom: 1px solid $dark-blue;
         text-decoration: none;
+        color: $light-blue;
+        &:hover {
+            color: $light-blue;
+            background-color: $light-blue;
+            color: $white;
+            
+         
+        }
     }
 } //li
 } //.navagation    
@@ -64,22 +82,33 @@ header {
 .close-btn{
     height: 40px;
     width: 40px;
-    color: $text-color;
+    color: $dark-blue;
     text-decoration: none;
     &:before{
         height: 40px;
         width: 40px;
         display: inline-block;
         padding: 13px 11px;
-        border: 1px solid $light-grey;
+        border: 1px solid $dark-blue;
+        &:hover {
+            background-color: $light-blue;
+        }
     }
     span{
         @include element-invisible;
+    }
+    &:hover {
+        color:$light-blue;
+        border: $light-blue;
     }
 }
 
 .close-btn{
     margin: 1em;
+    height: 40px;
+     width: 40px;
+     padding: 10px 7px;
+
 }
 
 //** sliding navagationn **//
@@ -93,6 +122,7 @@ header {
         overflow: hidden;
         width: 100%;
         z-index: 100;
+
         .sliding-canvas{
             width: 100%;
             height: 100%;
@@ -121,6 +151,8 @@ header {
         min-height: 800px;
     }
 } //media querie
+
+
 
 
 @media only screen and (min-width: 60em){
