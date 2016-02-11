@@ -29,15 +29,19 @@ body{
 }
 
 header {
-  padding: 0 2em;
+ padding: 0 1em;
   position: relative;
+  background-color: $dark-blue; 
+  height: 7em;
+  padding-top: 1em;
 }
 
 
 .toggle-btn{
     position: absolute;
     right: 1em;
-    top: 0;
+    top: 2em;
+    color: $white;
 }
 
 h1{
@@ -63,13 +67,13 @@ h1{
         font-family: sans-serif;
         text-transform: uppercase;
         text-align: center;
-        padding: .5em 1em;
+        padding: 1em 1em;
         border-bottom: 1px solid $dark-blue;
         text-decoration: none;
         color: $light-blue;
         &:hover {
             color: $light-blue;
-            background-color: $light-blue;
+            background-color: $dark-blue;
             color: $white;
             
          
@@ -82,23 +86,25 @@ h1{
 .close-btn{
     height: 40px;
     width: 40px;
-    color: $dark-blue;
+    color: $light-blue;
     text-decoration: none;
     &:before{
         height: 40px;
         width: 40px;
         display: inline-block;
         padding: 13px 11px;
-        border: 1px solid $dark-blue;
+        border: 1px solid $light-blue;
         &:hover {
-            background-color: $light-blue;
+            background-color: $white;
+            border: 1px solid $light-blue;
+
         }
     }
     span{
         @include element-invisible;
     }
     &:hover {
-        color:$light-blue;
+        color:$white;
         border: $light-blue;
     }
 }
@@ -108,6 +114,9 @@ h1{
     height: 40px;
      width: 40px;
      padding: 10px 7px;
+      &:hover {
+        color:$dark-blue;
+      }
 
 }
 

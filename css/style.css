@@ -498,14 +498,18 @@ body.noscript .toggle-btn {
 }
 
 header {
-  padding: 0 2em;
+  padding: 0 1em;
   position: relative;
+  background-color: #135372;
+  height: 7em;
+  padding-top: 1em;
 }
 
 .toggle-btn {
   position: absolute;
   right: 1em;
-  top: 0;
+  top: 2em;
+  color: white;
 }
 
 h1 {
@@ -533,7 +537,7 @@ h1 {
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
-  padding: .5em 1em;
+  padding: 1em 1em;
   border-bottom: 1px solid #135372;
   text-decoration: none;
   color: #009999;
@@ -541,7 +545,7 @@ h1 {
 
 .navigation li a:hover {
   color: #009999;
-  background-color: #009999;
+  background-color: #135372;
   color: white;
 }
 
@@ -549,7 +553,7 @@ h1 {
 .close-btn {
   height: 40px;
   width: 40px;
-  color: #135372;
+  color: #009999;
   text-decoration: none;
 }
 
@@ -559,12 +563,13 @@ h1 {
   width: 40px;
   display: inline-block;
   padding: 13px 11px;
-  border: 1px solid #135372;
+  border: 1px solid #009999;
 }
 
 .toggle-btn:before:hover,
 .close-btn:before:hover {
-  background-color: #009999;
+  background-color: white;
+  border: 1px solid #009999;
 }
 
 .toggle-btn span,
@@ -578,7 +583,7 @@ h1 {
 
 .toggle-btn:hover,
 .close-btn:hover {
-  color: #009999;
+  color: white;
   border: #009999;
 }
 
@@ -587,6 +592,10 @@ h1 {
   height: 40px;
   width: 40px;
   padding: 10px 7px;
+}
+
+.close-btn:hover {
+  color: #135372;
 }
 
 @media only screen and (max-width: 60em) {
