@@ -75,6 +75,7 @@ h1{
             color: $light-blue;
             background-color: $dark-blue;
             color: $white;
+           
             
          
         }
@@ -114,6 +115,9 @@ h1{
     height: 40px;
      width: 40px;
      padding: 10px 7px;
+                top: 2em;
+
+    
       &:hover {
         color:$dark-blue;
       }
@@ -169,6 +173,14 @@ h1{
     .close-btn{
         display: none;
     }
+    
+    a{
+        display: inline-block;
+    }
+     li{
+         display: inline-block;
+     }
+    
 }
 
 

@@ -592,6 +592,7 @@ h1 {
   height: 40px;
   width: 40px;
   padding: 10px 7px;
+  top: 2em;
 }
 
 .close-btn:hover {
@@ -633,6 +634,12 @@ h1 {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+  a {
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
   }
 }
 
